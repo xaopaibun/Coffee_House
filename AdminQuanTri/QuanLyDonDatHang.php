@@ -74,7 +74,7 @@
             <tbody id="body_table">
             <?php 
                 require("KetNoiCSDL.php");
-                $SQL = "SELECT * FROM dondathang";
+                $SQL = "SELECT dondathang.*, NguoiDung.HoTen FROM dondathang, NguoiDung where dondathang.iDNguoiDung = NguoiDung.iDNguoiDung";
                 $result = $conn->query($SQL);
 
                 if ($result->num_rows > 0) {
@@ -84,10 +84,17 @@
                     <tr style="height: 80px;" class="text-center">
                         <td scope="row"><?=$row['iDDonDatHang']?></td>
                         <td><?=$row["NgayDat"]?></td>
-                        <td><?=$row["iDNguoiDung"]?></td>
-                        <td ><?=$row["TinhTrang"]?></td>
+                        <td><?=$row['HoTen']?></td>
+                        <td ><div class="form-group">
+                          <select class="custom-select" name="" id="">
+                            <option value="">Hủy</option>
+                            <option value=""selected>Đang xử lý</option>
+                            <option value="">Đang giao</option>
+                            <option value="">Hoàn tất</option>
+                          </select>
+                        </div></td>
                         <td><?=$row["TongTien"]?>VNĐ</td>
-                        <td><a data-href="" class="NutXoa">  <button type="button" class="btn btn-primary btn-lg">Xem Chi Tiết</button></a></td>
+                        <td><a data-href="" class=""> <button type="button" class="btn btn-info btn-lg">Chi Tiết</button></a> <button type="button" class="btn btn-secondary btn-lg">Lưu</button></td>
                     </tr>
                     <?php
                    
