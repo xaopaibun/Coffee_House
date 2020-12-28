@@ -1,0 +1,867 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    src:url('../Font/DancingScript-VariableFont_wght.ttf');
+    font-family: Dancing Script ;
+}
+@font-face{
+    src:url('../Font/Oswald-VariableFont_wght.ttf');
+    font-family:Oswald ;
+}
+
+
+html, body{
+  width: 100%; 
+}
+.header{
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+}
+.header_top{
+    height: 100px;
+    width: 100%;
+    
+    /* display: flex; */
+}
+.welcome_text{
+    color: #707070;
+    padding-top: 16px;
+    font-size: 14px;
+}
+.ul_taikhoan{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 16px;
+}
+.ul_taikhoan_li{
+    list-style: none;
+}
+.ul_taikhoan_li a, #user ,#user a {
+    color: #707070;
+    font-size: 14px;
+    padding-top: 16px;
+}
+#user a:hover{
+    text-decoration: none;
+    color: #e7b45a;
+}
+.ul_taikhoan_li a:hover{
+    text-decoration: none;
+    color: #424040;
+}
+.GioHang i{
+    color: #fff;
+
+}
+.nav_item.sp{
+    position: relative;
+}
+
+.nav_item.sp:hover .nav_item_sanpham{
+    display: block;
+}
+
+.nav_item_sanpham{
+    display: none;
+    list-style: none;
+    top:88px;
+    left: 0px;
+    z-index: 9;
+    width: 215px;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 2px rgba(0,0,0,0.2);
+    position: absolute;
+}
+.nav_item_sanpham li{
+    border-bottom: solid 1px #e5e6ec;
+    padding: 10px 0;
+}
+.nav_item_sanpham li a{
+    color: #1f1f1f;
+
+}
+.nav_item_sanpham a:hover{
+    color: #e7b45a;
+    text-decoration: none;
+}
+.GioHang {
+    right: 40px;
+    top: 22px;
+    position: absolute;
+    justify-content: center;
+}
+body{
+    overflow-x: hidden;
+}
+.GioHang .nav_icon{
+    list-style: none;
+    padding: 8px;
+   position: relative;
+}
+.section_about{
+    color: #707070;
+    width: 100%;
+    height: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.about_left{
+    justify-content: center;
+    align-items: center;
+}
+.The_h2{
+    font-family: Oswald,sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    color: #e7b45a;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.Coffee_House{
+    font-size: 25px;
+    font-family: Dancing Script, cursive;
+    font-weight: 700;
+    line-height: normal;
+    color: #353434;
+    text-align: center;
+}
+.headertop{
+    height: 210px;
+}
+/* .nav_item a:visited{
+    color: #e1a02d;
+} */
+.header_nav{
+    width: 100%;
+    height: 80px;
+    background: #252525;
+    padding: 0;
+    border-radius: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.header_nav_left, .header_nav_right{
+    text-align: right;
+    display: flex;
+    list-style: none;
+    
+}
+.active{
+    color: #e7b45a;
+}
+h1{  text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    color: #e7b45a;
+    text-align: center;
+    font-family: Oswald,sans-serif;
+}
+.input{
+    margin-bottom: 15px;
+    min-height: 50px;
+    padding: 10px 25px;
+    box-shadow: 0px 0px 7px 0px rgba(37,37,37,0.1);
+    border: none !important;
+   
+}
+.day_time {
+    padding: 10px 0;
+}
+.cangiua{
+    margin: auto;
+}
+
+.submit{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    border-radius: 30px;
+    padding: 0 15px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+.Xem_Them{
+    font-size: 15px;
+    text-transform: none;
+    line-height: 45px;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #1f1f1f;
+    font-weight: 400;
+    padding: 0 30px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid rgba(167,136,105,0.2);
+}
+.Xem_Them:hover{
+    background-color: #e7b45a;
+    color: #1f1f1f;
+    text-decoration: none;
+}
+.submit:hover{
+    color:green;
+    background-color: #fff;
+}
+.header_nav_left .nav_item >a, .header_nav_right .nav_item >a{
+    color: white;
+    display: block;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+    
+}
+.header_nav_left  a:hover, .header_nav_right a:hover{
+    color: #e7b45a;
+    text-decoration: none;
+}
+.logo_center{
+    width: 191px;
+    display: inline-block;
+    line-height: 191px;
+    background: #252525;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+    margin: 0 15px;
+}
+.active{
+    color: #e7b45a;
+}
+.section_menu_today{
+    background-image: url('../IMG/bg_menutoday.jpg');
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+}
+.heading p{
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    line-height: normal;
+    color: #353434;
+    width: 100%;
+    text-align: center;
+}
+.Menu_Lua_Chon{
+    width: 60%;
+    margin: auto;
+}
+.Menu_Lua_Chon .nut{
+    padding: 15px;
+    border-radius: 30px;
+}
+.Menu_Lua_Chon .active{
+    background-color: #28a745;
+}
+.content-tab01{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img_sp{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.content-tab01-item{
+    width: 50%;
+    display: flex;
+    line-height: 30px;
+    margin-top: 40px;
+    height: 125px;
+}
+.tabs-content {
+    margin-top: 10px;
+}
+.thongtinsp p{
+    color:#707070;
+}
+.tieude_sp .name_product a{
+    color: black;
+    padding : 15px;
+}
+.name_product{
+    font-size: 21px;
+}
+.TT_SP{
+    padding-left: 14px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.tieude_sp .name_product a:hover{
+    color: #e7b45a;
+    text-decoration: none;
+}
+.Gia_SP{
+    color: #252525;
+    font-size: 15px;
+    line-height: 24px;
+    display: block;
+    font-weight: 700;
+    
+}
+.a-center{
+    text-align: center !important;
+}
+.Hinh_Anh_Quan_Coffee{
+    height: 700px;
+    padding: 30px 0;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-image: url('../IMG/bg_footer.png');
+    background-size: cover;
+    background-position: center;
+}
+.img_footer{
+    width: 80%;
+    height: 100%;
+    padding-top: 200px;
+}
+.khoi_img{
+    width: 47%;
+    height: 47%;
+    overflow: hidden;
+}
+.img_img{
+    height: 100%;
+    width: 100%;
+    transition: 0.6s;
+}
+.img_img:hover{
+    transform: scale(1.2);
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.khoi_imgtrai{
+    overflow: hidden;
+}
+.img_img_big{
+    width: 100%;
+    height: 96%;
+    transition: 0.6s;
+    transform: scale(1.2);
+}
+.img_img_big:hover{
+    transform: scale(1);
+}
+.contact_item i{
+    padding:12px;
+}
+.contact_item, .contact_menu{
+    list-style: none;
+    color: #b7b7b7;
+}
+.follow_option{
+    display: flex;
+    list-style: none;
+}
+.follow_option a{
+    color:#b7b7b7;
+    padding: 15px;
+}
+.follow_option a:hover{
+    text-decoration: none;
+    color:#e7b45a;
+}
+.contact_menu a{
+    color: #b7b7b7;
+    line-height: 35px;
+}
+.contact_menu a:hover{
+    text-decoration: none;
+    color: #e7b45a;
+}
+.contact{
+     margin-top: 200px;
+}
+.contact_tieude{
+    color: white;
+    list-style: none;
+    font-weight: 500;
+}
+.copy_right{
+    color: #b7b7b7;
+    padding-top:20px;
+}
+.copy_right span{
+    color: #e7b45a;
+}
+.copy_right a{
+    color: #e7b45a;
+}
+.copy_right a:hover{
+    color: #b7b7b7;
+    text-decoration: none;
+}
+.footer_end{
+    display:flex;
+    position: relative;
+}
+#backtotop{
+    color:#b7b7b7;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    top: auto !important;
+    text-decoration: none;
+}
+#backtotop:hover{
+    color: #e7b45a;
+
+}
+.tieude_sp {
+    width: 65%;
+    height: 100px;
+    line-height: 25px;
+    padding-left: 10px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+.cot{
+    height: 160px;
+    border-right: 1px solid #ebebeb;
+}
+#backtotop .fas{
+    font-size: 11px;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    margin-left: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #e7b45a;
+    color: #252525
+}
+.top_footer span{
+    color: #707070;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.top_footer .row{
+    border-top: 1px solid #ebebeb;
+}
+/* 
+//thongtin chi tiet san pham */
+.block_chonsp{
+    width: auto;
+    display: block;
+    background: #fff;
+    padding: 0px;
+    border-radius: 30px;
+    height: 60px;
+    border: 1px solid #ebebeb;
+    margin: 5px 0 40px 0;
+}
+
+.query_search{
+    min-height: unset;
+    line-height: 30px;
+    background: #e7b45a;
+    border-radius: 25px !important;
+    padding: 0px 18px 2px 1px;
+    width: 228px;
+    height: 40px;
+    line-height: 40px;
+    display:none;
+}
+.nav_icon.search:hover .query_search{
+    display:block;
+}
+#txtTimKiem{
+    background: #e7b45a;
+    border: none;
+    color: #fff;
+}
+#txtTimKiem:active{
+    border: none;
+}
+.block_chonsp{
+    display: flex;
+    background: #fff;
+    border-radius: 30px;
+    height: 60px;
+    border: 1px solid #ebebeb;
+    margin-top: 30px;
+}
+.block_chonsp .left{
+    display: flex;
+    width: 25%;
+    padding: 10px;
+}
+.block_chonsp .right{
+    width: 75%;
+    padding: 0px;
+}
+.btndathang{
+    padding: 0;
+    height: 59px;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    background: #e7b45a;
+    font-family: "Roboto",sans-serif;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Oswald",sans-serif;
+    border: 1px solid #e7b45a;
+    text-transform: uppercase;
+}
+.btndathang:hover{
+    background: #fff;
+    color: #e1a02d;
+    border: 1px solid #e7b45a;
+    box-shadow: 0px 1px 9px 0px rgba(4,4,4,0.14);
+}
+.btngiam, .btntang{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.botron{
+    border-radius: 50%;
+}
+.MoTaChiTietSanPham{
+    height: 240px;
+    width: 100%;
+}
+.GioiThieu{
+    width: 100%;
+    height: auto;
+    
+}
+
+/* // Khoi Dat Ban */
+.section_hours_book {
+    margin-top: 105px;
+    padding: 110px 0;
+    background-image: url('../IMG/bg_menutoday.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section_hours_book .content_left {
+    text-align: center;
+    margin-top: 55px;
+}
+.heading {
+    display: block;
+    position: relative;
+}
+.section_hours_book h2 {
+    color: #e7b45a;
+    text-align: center;
+}
+.section_hours_book .content_left .content_hour {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.section_hours_book .content_left .content_hour .option_1, .section_hours_book .content_left .content_hour .option_2 {
+    font-size: 15px;
+    color: #252525;
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+
+.section_hours_book .content_left .content_hour span {
+    font-size: 15px;
+    color: #707070;
+    float: left;
+    width: 100%;
+}
+.section_hours_book .content_left .content_hour .option_2 {
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+}
+.section_hours_book .content_left .hotline_hour {
+    float: left;
+    width: 100%;
+    margin-top: 45px;
+    position: relative;
+}
+.section_hours_book .to_animate {
+    z-index: 999;
+    background: #e7b45a;
+    padding: 55px 105px 60px 105px;
+}
+.section_hours_book .to_animate .heading {
+    margin-bottom: 40px;
+}
+.section_hours_book .to_animate .heading h2 {
+    color: #fff;
+}
+.heading h1, .heading h2, .heading h3 {
+    font-family: "Oswald",sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    color: #e7b45a;
+    text-align: center;
+}
+.section_hours_book .to_animate .heading span {
+    font-size: 14px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+.section_hours_book input {
+    height: 60px;
+    background-color: rgba(255,255,255,0.122) !important;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    color: #fff !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.section_hours_book .form-builder-item {
+    margin-bottom: 0px !important;
+    margin-top: 10px;
+}
+.section_hours_book .form-builder-item .form-group {
+    position: relative;
+}
+.section_hours_book .form-builder-item .form-group .form-control {
+    padding-left: 20px;
+    background: transparent;
+}
+.form-group .form-control {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: "Roboto",sans-serif;
+    line-height: 1.5;
+    color: #252525;
+    background-color: #fff;
+    background-image: none;
+    margin-bottom: 15px;
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+    border-radius: 30px;
+}
+.section_hours_book .form-builder-item .form-group .fas {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 0;
+}
+.section_hours_book .form-builder-item.hour_check select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background: transparent;
+    background-color: transparent !important;
+    color: #fff;
+    border: none;
+}
+.form-group .form-control {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: "Roboto",sans-serif;
+    line-height: 1.5;
+    color: #252525;
+    background-color: #fff;
+    background-image: none;
+    margin-bottom: 15px;
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+    border-radius: 30px;
+}
+.section_hours_book .form-builder-item.hour_check select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background: transparent;
+    background-color: transparent !important;
+    color: #fff;
+    border: none;
+}
+.section_hours_book .form-builder-item .form-group {
+    position: relative;
+}
+.hidden {
+    display: none !important;
+}
+.section_hours_book .form-builder-item.hour_check .form-group .form-control {
+    font-size: 0;
+}
+.section_hours_book .form-builder-item .form-group .form-control {
+    padding-left: 20px;
+    background: transparent;
+}
+
+.form-group .form-control {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: "Roboto",sans-serif;
+    line-height: 1.5;
+    color: #252525;
+    background-color: #fff;
+    background-image: none;
+    margin-bottom: 15px;
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+    border-radius: 30px;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #eee;
+    opacity: 1;
+}
+
+.section_hours_book .form-builder-item.hour_check select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background: transparent;
+    background-color: transparent !important;
+    color: #fff;
+    border: none;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.section_hours_book .form-builder-item.hour_check select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background: transparent;
+    background-color: transparent !important;
+    color: #fff;
+    border: none;
+}
+input[type="number"], input[type="tel"], textarea, select {
+    border: 1px solid #e1e1e1;
+    padding: 0 110px 0 20px;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+#guiest_id1{
+    color: #353434;
+}
+
+.section_hours_book .content_left .hotline_hour a {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Oswald",sans-serif;
+    color: #e7b45a;
+    letter-spacing: 2px;
+}
+.btnsubmit{
+    padding: 0;
+    height: 59px;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    background:  #fff;
+    font-family: "Roboto",sans-serif;
+    position: relative;
+    font-size: 18px;
+    color: #e1a02d;
+    font-weight: 600;
+    font-family: "Oswald",sans-serif;
+    border: 1px solid #e7b45a;
+    text-transform: uppercase;
+}
+.btnsubmit:hover{
+    background: #e1a02d;
+    color: #fff;
+    border: 1px solid #e7b45a;
+    box-shadow: 0px 1px 9px 0px rgba(4,4,4,0.14);
+}
+.tintuc {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.tintuc h1{
+    margin : 70px 0;
+}
+.tintuc a{ 
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tintuc a:hover{
+    color: #e1a02d;
+    text-decoration: none;
+}
+.KhoiTinTuc{
+    height: 300px;
+    margin-bottom: 50px;
+}
+.content{
+    color: #707070;
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 26px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
